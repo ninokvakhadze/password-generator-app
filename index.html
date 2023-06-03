@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="input-div">
+      <input type="text" id="Password-input"   disabled/>
+      <p class="copied"></p>
+      <div class="copy-div">
+      <img class="copy" src="./images/icon-copy.svg" alt="">
+      <img class="copy-hover"src="./images/copyHover.svg" alt="">
+    </div>
+    </div>
+    <div class="main-div">
+      <div class="range-div">
+        <div class="Length-div">
+          <h2>Character Length</h2>
+          <h3 id="number">0</h3>
+        </div>
+        <input type="range" value="0" min="0" max="20" id="length-range" />
+      </div>
+      <div class="conditions">
+        <div class="condition">
+          <div class="check-div" id="uppercase">
+            <img src="./images/icon-check.svg" alt="icon-check" class="check" id="check1" />
+          </div>
+          <p class="condition-text">Include Uppercase Letters</p>
+        </div>
+        <div class="condition">
+          <div class="check-div" id="lowercase">
+            <img src="./images/icon-check.svg" alt="icon-check" class="check" id="check2" />
+          </div>
+          <p class="condition-text">Include Lowercase Letters</p>
+        </div>
+        <div class="condition">
+          <div class="check-div" id="numbers">
+            <img src="./images/icon-check.svg" alt="icon-check" class="check" id="check3"/>
+          </div>
+          <p class="condition-text">Include Numbers</p>
+        </div>
+        <div class="condition">
+          <div class="check-div" id="symbols">
+            <img src="./images/icon-check.svg" alt="icon-check" class="check" id="check4"/>
+          </div>
+          <p class="condition-text">Include Symbols</p>
+        </div>
+      </div>
+      <div class="strength-component">
+        <h5>STRENGTH</h5>
+        <div class="strength-div">
+          <p class="strength"></p>
+          <div class="strength-boxes">
+            <div class="strength-box" id="box1"></div>
+            <div class="strength-box" id="box2"></div>
+            <div class="strength-box" id="box3"></div>
+            <div class="strength-box" id="box4"></div>
+          </div>
+        </div>
+      </div>
+      <button id="btn">
+        <p class="GENERATE">GENERATE</p>
+        <img src="./images/icon-arrow-right.svg" class="arrow">
+        <img src="./images/Shape.png" class="arrow-hover">
+      </button>
+    </div>
+  </body>
+</html>
